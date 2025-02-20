@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" class="logo" href="Images/image.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature and Humidity Sensor</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/11.0.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/11.0.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/11.0.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/11.0.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/11.0.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/11.0.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/11.0.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/11.0.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/11.0.2/firebase-remote-config-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Humidity & Temperature</h1>
+        <div class="sensor temperature">Temperature: <span id="temp"></span>°C</div>
+        <div class="sensor humidity">Humidity: <span id="humidity"></span>%</div>
+
+        <div class="light-status">Light Status</div>
+        <div class="light-container">
+            <div class="light-indicator" id="light-red"></div>
+            <div class="light-indicator" id="light-green"></div>
+        </div>
+
+        <div class="buzzer-status">Buzzer Status: <span id="buzzer-text">OFF</span></div>
+        <div class="buzzer-container">
+            <div class="buzzer-indicator" id="buzzer-indicator"></div>
+        </div>
+        
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

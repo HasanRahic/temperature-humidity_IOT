@@ -1,0 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #1e3c72, #7999d1);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: linear-gradient(45deg, #fff, #9ebdf3);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+}
+h1 {
+    font-size: 26px;
+    color: #222;
+    margin-bottom: 20px;
+}
+.sensor {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sensor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.temperature {
+    background: #ff4757;
+    color: white;
+}
+.humidity {
+    background: #3742fa;
+    color: white;
+}
+.light-status, .buzzer-status {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.light-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.light-indicator {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: gray;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.sensor {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.light-status, .buzzer-status {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.light-container, .buzzer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.light-indicator, .buzzer-indicator {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#light-red { background-color: gray; }
+#light-green { background-color: gray; }
+#buzzer-indicator { background-color: gray; } 
+
+@media (max-width: 480px) {
+    
+
+    .container {
+        padding: 20px;
+        background: none;
+        box-shadow: none;
+    }
+    h1 {
+        font-size: 22px;
+        color: #fff;
+    }
+    .sensor {
+        font-size: 24px;
+        padding: 12px;
+    }
+    .light-indicator {
+        width: 50px;
+        height: 50px;
+    }
+    .light-container {
+        gap: 10px;
+    }
+    .light-status, .buzzer-status{
+        color: #fff;
+    }
+}
